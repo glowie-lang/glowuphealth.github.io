@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9faef;
+  color: #1a1a1a;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: #f3f8ed;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  color: #3b7a57;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+nav a.cta {
+  background-color: #9fdc9a;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #1b3520;
+}
+
+.btn {
+  background-color: #9fdc9a;
+  color: #1b3520;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.info {
+  display: grid;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f3f8ed;
+  font-size: 0.9rem;
+  color: #444;
+}
