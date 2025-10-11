@@ -130,7 +130,48 @@ footer {
   }
 }
 
-/* hide menu toggle on desktop */
+/* Hide menu toggle on desktop */
 .menu-toggle {
   display: none;
 }
+
+/* 🌿 Mobile-Friendly Navbar */
+@media (max-width: 768px) {
+  header.navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block; /* makes the button show up on mobile */
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    padding: 0.5rem 0;
+    display: block;
+  }
+}
+
