@@ -65,6 +65,16 @@
 
   faders.forEach(fader => appearOnScroll.observe(fader));
 </script>
+<script type="module">
+  import { createIcons, Heart, Users, Sparkles } from "https://cdn.jsdelivr.net/npm/lucide@latest/+esm";
 
+  createIcons({
+    icons: {
+      Heart,
+      Users,
+      Sparkles
+    }
+  });
+</script>
 </body>
 </html>
