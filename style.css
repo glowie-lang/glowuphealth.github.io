@@ -304,3 +304,16 @@ footer {
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
+.content h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #3b5249;
+  margin-top: 2rem;
+}
+
+.content h2 i {
+  width: 24px;
+  height: 24px;
+  color: #8cbf88; /* soft green accent */
+}
