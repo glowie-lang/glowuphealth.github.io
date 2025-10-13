@@ -3,79 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Programs | Glow Up Health</title>
+  <title>Resources | Glow Up Health</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="navbar">
-  <div class="logo">
-     <img src="WhatsApp_Image_2025-05-09_at_11.06.47_b258e62d-removebg-preview.png" alt="Glow Up Health Logo" style="height: 40px;">
-    <span>Glow Up Health</span>
-    <button class="menu-toggle">☰</button>
-  </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="programs.html">Programs</a>
-    <a href="resources.html">Resources</a>
-    <a href="blog.html">Blog</a>
-    <a href="#" class="cta">Get Involved</a>
-  </nav>
+    <div class="logo">
+      <img src="WhatsApp_Image_2025-05-09_at_11.06.47_b258e62d-removebg-preview.png" alt="Glow Up Health Logo" style="height: 40px;">
+      <span>Glow Up Health</span>
+      <button class="menu-toggle">☰</button>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="resources.html">Resources</a>
+      <a href="blog.html">Blog</a>
+      <a href="#" class="cta">Get Involved</a>
+    </nav>
   </header>
 
-  <section class="page-hero fade in">
-    <h1>Our Programs</h1>
-    <p>Workshops, campaigns, and mentorships for teen wellness and confidence.</p>
+  <section class="page-hero fade-in">
+    <h1>Helpful Resources</h1>
+    <p>Free tools, planners, and self-care goodies to help you glow inside and out 🌸</p>
   </section>
 
- <section class="content fade-in">
-  <h2><i data-lucide="sparkles"></i> Workshops</h2>
-  <p>Interactive sessions covering mental health, self-care, hygiene, and more.</p>
+  <section class="resources-grid fade-in" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 40px;">
+    <div class="resource-card" style="background: #fff; padding: 20px; border-radius: 15px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <img src="https://raw.githubusercontent.com/glowie-lang/glowuphealth.github.io/main/Purple%20Orange%20Playful%20Illustration%20Mood%20Tracker%20Planner.jpg" alt="Mood Tracker" style="width:100%; border-radius: 10px;">
+      <h3>Mood Tracker</h3>
+      <p>Reflect on your emotions and track your daily mood to build mindfulness 🌿</p>
+      <a href="https://raw.githubusercontent.com/glowie-lang/glowuphealth.github.io/main/Purple%20Orange%20Playful%20Illustration%20Mood%20Tracker%20Planner.pdf" download class="btn">Download</a>
+    </div>
 
-  <h2><i data-lucide="users"></i> Community Outreach</h2>
-  <p>Collaborations with schools and youth groups to spread awareness and resources.</p>
-
-  <h2><i data-lucide="heart"></i> Peer Mentorship</h2>
-  <p>Our teen-to-teen mentorship program creates a safe space for support and growth.</p>
-</section>
-
+    <div class="resource-card" style="background: #fff; padding: 20px; border-radius: 15px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <img src="https://raw.githubusercontent.com/glowie-lang/glowuphealth.github.io/main/Cream%20and%20Pink%20Modern%20To-Do%20List%20Checklist.jpg" alt="Hygiene Checklist" style="width:100%; border-radius: 10px;">
+      <h3>Hygiene Checklist</h3>
+      <p>A printable list to remind you of small ways to take care of yourself every day 💕</p>
+      <a href="https://raw.githubusercontent.com/glowie-lang/glowuphealth.github.io/main/Cream%20and%20Pink%20Modern%20To-Do%20List%20Checklist.pdf" download class="btn">Download</a>
+    </div>
+  </section>
 
   <footer>
     <p>© 2025 Glow Up Health. All rights reserved.</p>
   </footer>
 
-<script>
-  const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('nav');
-
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-</script> 
   <script>
-  const faders = document.querySelectorAll('.fade-in');
-  const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
-
-  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
     });
-  }, appearOptions);
-
-  faders.forEach(fader => appearOnScroll.observe(fader));
-</script>
-<script type="module">
-  import { createIcons, Heart, Users, Sparkles } from "https://cdn.jsdelivr.net/npm/lucide@latest/+esm";
-
-  createIcons({
-    icons: {
-      Heart,
-      Users,
-      Sparkles
-    }
-  });
-</script>
+  </script>
 </body>
 </html>
+
