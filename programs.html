@@ -22,19 +22,14 @@
       <a href="#" class="cta">Get Involved</a>
     </nav>
   </header>
-<section class="page-hero">
-  <h1>Our Programs</h1>
-  <p>Workshops, campaigns, and mentorships for teen wellness and confidence.</p>
-</section>
-
-<section class="content">
-  <h2>Workshops</h2>
+<section class="content fade-in">
+  <h2><i data-lucide="sparkles"></i> Workshops</h2>
   <p>Interactive sessions covering mental health, self-care, hygiene, and more.</p>
 
-  <h2>Community Outreach</h2>
+  <h2><i data-lucide="users"></i> Community Outreach</h2>
   <p>Collaborations with schools and youth groups to spread awareness and resources.</p>
 
-  <h2>Peer Mentorship</h2>
+  <h2><i data-lucide="heart"></i> Peer Mentorship</h2>
   <p>Our teen-to-teen mentorship program creates a safe space for support and growth.</p>
 </section>
 
@@ -49,6 +44,31 @@
       nav.classList.toggle('active');
     });
   </script>
+  <script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>  
+
+<!-- ✨ Add the Lucide icons script HERE -->
+<script type="module">
+  import { createIcons, Heart, Users, Sparkles } from "https://cdn.jsdelivr.net/npm/lucide@latest/+esm";
+
+  createIcons({
+    icons: {
+      Heart,
+      Users,
+      Sparkles
+    }
+  });
+</script>
+
+</body>
+</html>
+
 </body>
 </html>
 
