@@ -317,4 +317,79 @@ footer {
   height: 24px;
   color: #8cbf88; /* soft green accent */
 }
+/* ===== RESOURCES PAGE STYLES ===== */
+
+.page-hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #e9f7ee;
+  color: #2e2e2e;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.page-hero p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* grid of resources */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 50px 20px;
+  background-color: #f8fdf8;
+}
+
+/* individual resource cards */
+.resource-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+.resource-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.resource-card h3 {
+  margin: 10px 0 5px;
+  color: #2e2e2e;
+}
+
+.resource-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* download button */
+.resource-card .btn {
+  display: inline-block;
+  background-color: #91d3a2;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.resource-card .btn:hover {
+  background-color: #76c18b;
+}
 
