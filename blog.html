@@ -4,12 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog | Glow Up Health</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body style="background-color: pink; text-align: center;">
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="WhatsApp_Image_2025-05-09_at_11.06.47_b258e62d-removebg-preview.png" alt="Glow Up Health Logo" style="height: 40px;">
+      <span>Glow Up Health</span>
+      <button class="menu-toggle">☰</button>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="resources.html">Resources</a>
+      <a href="blog.html">Blog</a>
+      <a href="#" class="cta">Get Involved</a>
+    </nav>
+  </header>
 
-  <h1>Glow Up Blog 🌸</h1>
-  <p>If you can see this text, the page is working!</p>
+  <section class="page-hero fade-in" style="text-align:center; background-color:#fff; color:#000; padding:40px;">
+    <h1>Glow Up Blog ✨</h1>
+    <p>Inspiration, wellness tips, and confidence boosters — all written with love 💕</p>
+  </section>
 
+  <section class="blog-grid fade-in" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 40px; background-color: #fff; color: #000;">
+    
+    <div class="blog-card" style="background: #fafafa; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align:center;">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Self-care tips" style="width:100%; border-radius:10px;">
+      <h3>5 Simple Ways to Practice Self-Care 🌿</h3>
+      <p>Learn small, daily things you can do to take care of your mind and body.</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="blog-card" style="background: #fafafa; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align:center;">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Confidence" style="width:100%; border-radius:10px;">
+      <h3>Confidence Boost: How to Love the Real You 💫</h3>
+      <p>Feeling down? Here’s how to remember your worth and shine again!</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="blog-card" style="background: #fafafa; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align:center;">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Healthy routines" style="width:100%; border-radius:10px;">
+      <h3>Building Healthy Routines 🌸</h3>
+      <p>Balance school, social life, and self-care with these realistic habits!</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2025 Glow Up Health. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
 
